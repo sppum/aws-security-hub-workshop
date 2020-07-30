@@ -468,12 +468,14 @@
 <li>Click <strong>Summary</strong> on the left hand navigation.</li>
 </ol>
 <p><img alt="Security Hub Summary" src="../images/01-sec-hub-summary.png" /></p>
-<p>!! info "Security Hub automatically enables subscriptions to GuardDuty and Inspector.  Also collected, but not used in this workshop are findings from Macie, IAM Access Analyzer, and Firewall Manager."</p>
+<div class="admonition info">
+<p class="admonition-title">Security Hub automatically enables subscriptions to GuardDuty and Inspector.  Also collected, but not used in this workshop are findings from Macie, IAM Access Analyzer, and Firewall Manager.</p>
+</div>
 <ol>
 <li>Observe the Passed and Failed status of the <strong>CIS AWS Foundations</strong>.  Even though you just enabled it a few minutes ago, partial results of the 43 total checks have been collected.</li>
 </ol>
 <div class="admonition info">
-<p class="admonition-title">Refresh your browser to see the latest results.  After you enable a security standard, AWS Security Hub begins to run the checks within 2 hours.  After the initial check, the schedule for each control may be either periodic (12 hours) or change-triggered. </p>
+<p class="admonition-title">Refresh your browser to see the latest results.  After you enable a security standard, AWS Security Hub begins to run the checks within 2 hours.  After the initial check, the schedule for each control may be either periodic (12 hours) or change-triggered.</p>
 </div>
 <ol>
 <li>Scroll down to the graphs under <strong>Insights</strong> (Your graphs maybe different).  Move your mouse over <strong>New findings over time by provider</strong> and observe the 3 sources of findings that Security Hub is already collecting.  (There will be more throughout this workshop)</li>
@@ -621,7 +623,9 @@
 <li>Click on <strong>Security standards</strong>.</li>
 </ol>
 <p><img alt="Security Standards" src="../images/01-standards-home.png" /></p>
-<p>!!! info "Note the Security score should have changed from you first enabled the CIS standard.</p>
+<div class="admonition info">
+<p class="admonition-title">Note the Security score should have changed from you first enabled the CIS standard.</p>
+</div>
 <ol>
 <li>Click <strong>View Results</strong> for CIS AWS Foundations Benchmark v1.2.0.</li>
 </ol>
