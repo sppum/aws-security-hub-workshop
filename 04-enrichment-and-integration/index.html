@@ -300,6 +300,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create-an-incoming-webhook-in-slack-api" class="md-nav__link">
+    Create an Incoming Webhook in Slack API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-custom-action-in-security-hub" class="md-nav__link">
     Create Custom Action in Security Hub
   </a>
@@ -445,6 +452,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create-an-incoming-webhook-in-slack-api" class="md-nav__link">
+    Create an Incoming Webhook in Slack API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-custom-action-in-security-hub" class="md-nav__link">
     Create Custom Action in Security Hub
   </a>
@@ -554,11 +568,53 @@ https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace </li
 <p>When you created the slack workspace, you would have typed in something under “What is your Company doing?”. This sets up a default channel on Slack. You can choose to use this to receive Security Hub findings or create a new channel.</p>
 <p>If you want to create a new channel click on the + next to 'Channels' and create a new channel.</p>
 <p><img alt="ChatOps" src="../images/04-chatops-create-channel.png" /></p>
+<h3 id="create-an-incoming-webhook-in-slack-api">Create an Incoming Webhook in Slack API</h3>
+<ol>
+<li>
+<p>Go to your Slack API(https://api.slack.com).  </p>
+</li>
+<li>
+<p>Click <strong>Start Building</strong>.  </p>
+</li>
+<li>
+<p>Click on <strong>Create Your Slack App</strong> button. </p>
+</li>
+<li>
+<p>Click on <strong>Create New App</strong> button. </p>
+</li>
+<li>
+<p>Fill in the following details for your app:  </p>
+</li>
+<li><strong>App Name</strong>: security-hub-to-slack </li>
+<li><strong>Development Slack Workspace</strong>: Choose the Slack workspace that will receive the Security Hub findings ( this is the one you created)  </li>
+</ol>
+<p><img alt="SlackApp" src="../images/04-slack-create-app.png" /></p>
+<ol>
+<li>
+<p>Click the <strong>Create App</strong> Button.</p>
+</li>
+<li>
+<p>Select <strong>Incoming Webhooks</strong>. </p>
+</li>
+<li>
+<p>At the <strong>Activate Incoming Webhooks</strong> screen, move the slider from OFF to ON. </p>
+</li>
+<li>
+<p>Scroll down and choose <strong>Add New Webhook to Workspace</strong>. </p>
+</li>
+<li>
+<p>In the screen asking where your app should post choose the channel that you created in an earlier step.</p>
+</li>
+</ol>
+<p><img alt="SlackAppChannel" src="../images/04-slack-app-channel-choose.png" /></p>
+<ol>
+<li>On the next screen, scroll down to the Webhook URL section and save the URL as you will need it later to complete your setup.</li>
+</ol>
 <h3 id="create-custom-action-in-security-hub">Create Custom Action in Security Hub</h3>
 <p>To send information on findings that are in Security Hub to Slack a custom action in Security Hub needs to be defined. The following steps outline how to set up a custom action: </p>
 <ol>
 <li>
-<p>Go to Security Hub Console: https://console.aws.amazon.com/securityhub/ </p>
+<p>Go to Security Hub Console: https://console.aws.amazon.com/securityhub/. </p>
 </li>
 <li>
 <p>Click on <strong>Settings</strong>. </p>
