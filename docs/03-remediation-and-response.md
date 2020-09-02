@@ -193,11 +193,11 @@ You can read more in <a href = 'https://aws.amazon.com/blogs/security/automated-
 
 18. Click the title for "CIS 2.8 Ensure rotation for customer created CMKs is enabled"
 
-!!! info "Observe that two checks have a status of Failed"
+!!! info "Observe that one check has a status of Failed"
 
 ![remediation](./images/03-remediation-cis28-check.png)
 
-19. Click the **check box** to select the finding where the target Resource Type is **AwsKmsKey**.
+19. Click the **check box** to select the finding of the target resource.
 
 20. Click the **Actions** drop down on the right side and select **CIS 2.8 RR**.
 
@@ -209,18 +209,16 @@ You can read more in <a href = 'https://aws.amazon.com/blogs/security/automated-
 
 !!! info "After the green bar has confirmed the execution of the custom check, we need to manually initiate a re-evaluation in config in order to resolve the finding in Security Hub."
 
-21. Click the title on the same finding to expand the details on the right.
+21. Click the Investigate dots on the same resource to display the available options.
 
-22. Click the button for **Rule(s)**.
-
-23. Select "securityhub-cmk-backing-key-rotation-enabled-#####" to view the Config rule implemented via Security Hub.
+22. Click the link for **Config rule** to view the Config rule implemented via Security Hub.
 
 ![remediation](./images/03-remediation-cis28-rule.png)
 
 
-24. Click **Re-evaluate** at the top of the page.
+23. Click **Re-evaluate** at the top of the page.
 
-25. Click the browser tab to return to the filtered findings for CIS 2.8 and refresh your browser. The findings should now have a status of PASSED.
+24. Click the browser tab to return to the filtered findings for CIS 2.8 and refresh your browser. The findings should now have a status of PASSED.
 
 ![remediation](./images/03-remediation-cis28-passed.png)
 
